@@ -114,7 +114,7 @@ export function generateCertificatePDF(data: CertificateData) {
   doc.text(`Date of Issuance: ${formattedDate}`, 35, 145);
   doc.text(`Verification Code: ${data.verificationCode}`, 35, 152);
   doc.setTextColor(59, 130, 246);
-  doc.text('Verify Online at: imacoacademy.com/verify', 35, 159);
+  //doc.text('Verify Online at: imacoacademy.com/verify', 35, 159);
 
   // Signatures of Founders (Right side)
   // Imran

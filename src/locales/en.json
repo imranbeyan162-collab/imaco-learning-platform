@@ -27,14 +27,14 @@
     "step1Title": "1. Learn Core Skills",
     "step1Desc": "Practical, zero-fluff training led by agency practitioners in marketing, AI, video, design, and code.",
     "step2Title": "2. Apply for Internship",
-    "step2Desc": "Top students apply for our rigorous 2-month unpaid agency internship (5 interns per cohort).",
+    "step2Desc": "Top students apply for our rigorous 3-month unpaid agency internship (5 interns per cohort).",
     "step3Title": "3. Work on Real Client Projects",
     "step3Desc": "Execute real campaigns, brand designs, and AI automations for live corporate clients in Ethiopia.",
     "step4Title": "4. Certified & Launched",
     "step4Desc": "Receive an officially verified certificate, join the Imaco team full-time, or launch your own agency."
   },
   "stats": {
-    "stat1Value": "2 Months",
+    "stat1Value": "3 Months",
     "stat1Label": "Live Agency Immersion",
     "stat2Value": "5 Max",
     "stat2Label": "Interns Per Cohort",
@@ -74,7 +74,7 @@
   },
   "internship": {
     "badge": "Exclusive Agency Track",
-    "title": "Apply for the 2-Month Agency Internship",
+    "title": "Apply for the 3-Month Agency Internship",
     "subtitle": "An unpaid, high-intensity immersion inside Imaco. You will work on real client campaigns, receive 1-on-1 mentorship from Imran and Mikiyas, and build a verifiable portfolio.",
     "notice": "Important: Each cohort accepts only 5 interns. No resume or portfolio is required — we evaluate passion, curiosity, and commitment.",
     "formFullName": "Full Name",
@@ -130,11 +130,11 @@
     "subject": "Subject",
     "message": "Message",
     "sendBtn": "Send Message",
-    "officeLocation": "Addis Ababa, Ethiopia",
-    "officeDetails": "Bole Sub-City, Digital Innovation Hub"
+    "officeLocation": "Adama, Ethiopia",
+    "officeDetails": "Gende-hara-,Adama"
   },
   "footer": {
-    "tagline": "The training and talent engine of Imaco Agency. Addis Ababa, Ethiopia.",
+    "tagline": "The training and talent engine of Imaco Agency. Adama, Ethiopia.",
     "quickLinks": "Quick Links",
     "programs": "Programs",
     "contactInfo": "Direct Contacts",

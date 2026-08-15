@@ -34,7 +34,7 @@
     "step4Desc": "Sertifikeettii mirkanaa'e fudhadhaa; miseensa eejansii Imaco ta'aa ykn dhaabbata mataa keessanii hundeessaa."
   },
   "stats": {
-    "stat1Value": "Ji'a 2",
+    "stat1Value": "Ji'a 3",
     "stat1Label": "Hojii Eejansii Qabatamaa",
     "stat2Value": "5 Qofa",
     "stat2Label": "Leenjifamtoota Marsaatti",
@@ -130,11 +130,11 @@
     "subject": "Dhimma",
     "message": "Ergaa",
     "sendBtn": "Ergaa Ergaa",
-    "officeLocation": "Finfinnee (Addis Ababa), Itoophiyaa",
-    "officeDetails": "Kifla Magaalaa Boolee, Wiirtuu Kalaqa Diijitaalaa"
+    "officeLocation": "Adama, Itoophiyaa",
+    "officeDetails": "Ganda haaraa, Adama"
   },
   "footer": {
-    "tagline": "Wiirtuu leenjii fi ogummaa Imaco Agency. Finfinnee, Itoophiyaa.",
+    "tagline": "Wiirtuu leenjii fi ogummaa Imaco Agency. Adama, Itoophiyaa.",
     "quickLinks": "Geessituu Saffisaa",
     "programs": "Sagantaalee",
     "contactInfo": "Teessoo Kallattii",
