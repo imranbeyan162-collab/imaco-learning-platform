@@ -1,0 +1,95 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Course {
+  id               String         @id @default(uuid())
+  slug             String         @unique
+  title            String
+  shortDescription String
+  fullDescription  String
+  category         String
+  level            String         // Beginner, Intermediate, Advanced
+  format           String         // self_paced, cohort, mixed
+  thumbnail        String
+  instructorName   String
+  instructorRole   String
+  instructorAvatar String?
+  isPaid           Boolean        @default(false)
+  price            Float          @default(0.0)
+  currency         String         @default("ETB")
+  featured         Boolean        @default(false)
+  published        Boolean        @default(true)
+  durationHours    Int            @default(24)
+  cohortStartDate  String?
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  lessons          Lesson[]
+  registrations    Registration[]
+}
+
+model Lesson {
+  id              String   @id @default(uuid())
+  courseId        String
+  course          Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  title           String
+  description     String?
+  order           Int
+  videoUrl        String?
+  videoType       String   @default("youtube") // youtube, vimeo, blob, embed
+  durationMinutes Int      @default(15)
+  isFreePreview   Boolean  @default(true)
+  createdAt       DateTime @default(now())
+}
+
+model Registration {
+  id              String   @id @default(uuid())
+  courseId        String
+  course          Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  fullName        String
+  email           String
+  phone           String?
+  fieldOfInterest String?
+  createdAt       DateTime @default(now())
+}
+
+model InternshipApplication {
+  id              String   @id @default(uuid())
+  fullName        String
+  email           String
+  fieldOfInterest String
+  whyJoining      String
+  notes           String?
+  status          String   @default("NEW") // NEW, REVIEWED, ACCEPTED, REJECTED
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Testimonial {
+  id           String   @id @default(uuid())
+  fullName     String
+  roleOrCourse String
+  category     String   @default("Course") // Course, Internship, Agency
+  rating       Int      @default(5)
+  comment      String
+  avatarUrl    String?
+  status       String   @default("PENDING") // PENDING, APPROVED, REJECTED
+  createdAt    DateTime @default(now())
+}
+
+model Certificate {
+  id               String   @id @default(uuid())
+  verificationCode String   @unique // e.g. IMC-2026-001
+  recipientName    String
+  courseTitle      String
+  completionDate   DateTime @default(now())
+  issuerName       String   @default("Imaco Academy")
+  issuerTitle      String   @default("Lead Director")
+  grade            String?  @default("Honors")
+  createdAt        DateTime @default(now())
+}
